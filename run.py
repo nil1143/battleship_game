@@ -85,3 +85,59 @@ class Battleship:
                 if column == "X":
                     hit_ships += 1
         return hit_ships
+
+
+def RunGame():
+    """
+    Geting user and computer board and creating ships
+    """
+    computer_board = GameBoard([[" "] * 8 for i in range(8)])
+    user_guess_board = GameBoard([[" "] * 8 for i in range(8)])
+    Battleship.create_ships(computer_board)
+
+    """
+  Game has a 10 turns
+  """
+    turns = 10
+    while turns > 0:
+        GameBoard.print_board(user_guess_board)
+
+        """
+    Get user input
+    """
+        user_x_row, user_y_column = Battleship.get_user_input(object)
+        """
+    Check if guess duplicated
+    """
+        while (
+            user_guess_board.board[user_x_row][user_y_column] == "-"
+            or user_guess_board.board[user_x_row][user_y_column] == "X"
+        ):
+            print("You guessed that one already")
+            user_x_row, user_y_column = Battleship.get_user_input(object)
+        """
+    Check for hit or miss
+    """
+        if computer_board.board[user_x_row][user_y_column] == "X":
+            print("You sunk a battleship!")
+            user_guess_board.board[user_x_row][user_y_column] = "X"
+        else:
+            print("You missed!")
+            user_guess_board.board[user_x_row][user_y_column] = "-"
+        """
+    Check for win or lose
+    """
+        if Battleship.count_hit_ships(user_guess_board) == 5:
+            print("You hit all 5 battleships!")
+            break
+        else:
+            turns -= 1
+            print(f"You have {turns} turns remaining")
+            if turns == 0:
+                print("Sorry you ran out of turns")
+                GameBoard.print_board(user_guess_board)
+                break
+
+
+if __name__ == "__main__":
+    RunGame()
