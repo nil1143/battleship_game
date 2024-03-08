@@ -61,3 +61,14 @@ class Battleship:
     except ValueError and KeyError:
       print("Not a valid input")
       return self.get_user_input()    
+
+    def count_hit_ships(self):
+        """
+        Counting hitted ships
+        """
+        hit_ships = 0
+        for row in self.board:
+            for column in row:
+                if column == "X":
+                    hit_ships += 1
+    return hit_ships
