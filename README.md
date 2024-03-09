@@ -13,6 +13,7 @@
     * [User Requirements](#user-requirements)
     * [User Stories](#user-stories)
 * [Features](#features)
+* [Flowchart](#flowchart)
 * [Testing](#testing)
     * [Validator Testing](#validator-testing)
     * [Tested features](#tested-features)
@@ -93,6 +94,9 @@ This message will appear if input is incorrect.<br>
 ![Invalid input](docs/readme-images/readme-7.jpg)<br>
 ![Invalid input2](docs/readme-images/readme-8.jpg)
 
+# **Florchart** 
+
+![Flowchart](docs/readme-images/flowchart.jpg)
 # **Testing**
 
 ## Validator Testing
