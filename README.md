@@ -189,3 +189,6 @@ The solution to fix the issue was method to check if user input length is 0.<br>
  - CI Python Linter to validate the code [CI Linter](https://pep8ci.herokuapp.com/)
  - Code Institute Python lessons.
  - Code Institute Love Sandwiches project.
+ - VSCode: Mainly used as the primary text editor for writing the game code.
+ - Git and GitHub: Used Git for version control, allowing for collaboration and tracking of code changes on GitHub.
+ - Heroku: Deployed the game on Heroku's server, making it accessible to anyone with an internet connection.
