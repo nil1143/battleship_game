@@ -91,6 +91,11 @@ def RunGame():
     """
     Geting user and computer board and creating ships
     """
+    print("Welcome to the Battleship Game!\n")
+    print("You will have 10 attempts to guess the location of all 5 ships on the board.")
+    print("Each ship occupies a single cell on the board.")
+    print("If your guess hits a ship, it will be marked as 'X' on the board.")
+    print("If your guess misses, it will be marked as '-' on the board\n")
     computer_board = GameBoard([[" "] * 8 for i in range(8)])
     user_guess_board = GameBoard([[" "] * 8 for i in range(8)])
     Battleship.create_ships(computer_board)
