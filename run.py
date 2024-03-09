@@ -103,10 +103,6 @@ class Battleship:
                     hit_ships += 1
         return hit_ships
 
-    def save_result(hit_ships):
-        battleship_worksheet = SHEET.worksheet('score')
-        battleship_worksheet.append_row(result)
-
 
 def RunGame():
     """
