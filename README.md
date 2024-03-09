@@ -123,7 +123,7 @@ For code testing I used CI Python Linter The results are below.<br>
 | Test Case | Description | Expected Result | Actual Result |
 |-----------|-------------|-----------------|---------------|
 | Valid Input | Enter valid coordinates | Coordinate is accepted and processed | Passed |
-| Invalid Input | Enter invalid coordinates | Error message displayed | Passed |
+| Invalid Input | Enter invalid coordinates | Error message displayed ![error](docs/readme-images/readme-7.jpg) ![error2](docs/readme-images/readme-8.jpg)| Passed |
 
 ## User Stories Testing
 
