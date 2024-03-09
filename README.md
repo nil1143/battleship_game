@@ -140,3 +140,48 @@ Before fixing the issue **get_user_input(self)** function was like this:<br>
 
 The solution to fix the issue was method to check if user input length is 0.<br> If so, trigger the error message.<br>
 ![fixed-bugs3](docs/readme-images/fixed-bug-3.jpg)
+
+# **Deployment**
+
+### Cloning & Forking
+#### Fork
+1. On GitHub.com, navigate to the [nil1143/battleship_game](https://github.com/nil1143/battleship_game) repository.
+2. In the top-right corner of the page, click Fork.
+3. By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
+4. Add a description to your fork.
+5. Click Create fork.
+
+#### Clone
+1. Above the list of files click the button that says 'Code'.
+2. Copy the URL for the repository.
+3. Open Terminal. Change the directory to the location where you want the cloned directory.
+4. Type git clone, and then paste the URL
+5. Press Enter.
+
+### Local Deployment
+1. Sign up to [Gitpod](https://gitpod.io/)
+2. Download the Gitpod browser extension.
+3. On GitHub.com, navigate to the [nil1143/battleship_game](https://github.com/nil1143/battleship_game) repository.
+4. Above the list of files click the button that says 'Gitpod'.
+5. Once open you will need to install the libraries, you can do this by typing "pip3 install -r requirements.txt" into the terminal
+
+### Remote Deployment 
+ The prgoram was deployed to Heroku. If you have forked/cloned the repository the steps to deploy are:
+ 1. On Heroku, create a new app.
+ 2. input a name for your app
+ 3. Click on the settings tab
+ 4. Scroll to the Config Vars and click on the "Reveal Config Vars"
+ 5. Input CREDS into the key field and the content of the Google API creds file into the value area.
+ 6. Add another config, PORT into key and 8000 into value.
+ 7. Set the buildbacks to Python and NodeJs in that order .
+ 8. Link your Heroku app to you repository.
+ 9. Click on Deploy.
+ 10. The page will then provide the url to the python terminal.
+
+ The live link can be found here - [Battleships Game](https://battleships-6d00f58f1c3d.herokuapp.com/)
+
+ # **Credits**
+ - [Python.org](https://www.python.org/) for the documentation
+ - CI Python Linter to validate the code [CI Linter](https://pep8ci.herokuapp.com/)
+ - Code Institute Python lessons.
+ - Code Institute Love Sandwiches project.
