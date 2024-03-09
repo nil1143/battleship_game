@@ -15,7 +15,6 @@ SHEET = GSPREAD_CLIENT.open('battleships')
 
 result = SHEET.worksheet('score')
 
-print(result)
 
 class GameBoard:
     """
@@ -66,9 +65,11 @@ class Battleship:
         Function which randonly putting a ships on board coordinates
         """
         for i in range(5):
-            self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
+            self.x_row, self.y_column = random.randint(
+                0, 7), random.randint(0, 7)
             while self.board[self.x_row][self.y_column] == "X":
-                self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
+                self.x_row, self.y_column = random.randint(
+                    0, 7), random.randint(0, 7)
             self.board[self.x_row][self.y_column] = "X"
         return self.board
 
@@ -104,7 +105,8 @@ class Battleship:
 
     def save_result(hit_ships):
         battleship_worksheet = SHEET.worksheet('score')
-        battleship_worksheet.append_row(count_hit_ships)
+        battleship_worksheet.append_row(result)
+
 
 def RunGame():
     """
