@@ -94,9 +94,6 @@ This message will appear if input is incorrect.<br>
 ![Invalid input](docs/readme-images/readme-7.jpg)<br>
 ![Invalid input2](docs/readme-images/readme-8.jpg)
 
-# **Florchart** 
-
-![Flowchart](docs/readme-images/flowchart.jpg)
 # **Testing**
 
 ## Validator Testing
@@ -134,16 +131,6 @@ For code testing I used CI Python Linter The results are below.<br>
 |2|As a player, <br>  want the game to provide a funny experience. <br><br>I know I am done when code functionality works with no issues. <br>|Test Pass |
 
 
-# **Fixed bugs**
-
-During code testing I met unexpected bug/error with the inputs in **get_user_input(self)** function.<br> If I left input empty it caused error in the console like in the screenshoot below:<br>
-![fixed-bug1](docs/readme-images/fixed-bug-1.jpg)
-
-Before fixing the issue **get_user_input(self)** function was like this:<br>
-![fixed-bug2](docs/readme-images/fixed-bug-2.jpg)
-
-The solution to fix the issue was method to check if user input length is 0.<br> If so, trigger the error message.<br>
-![fixed-bugs3](docs/readme-images/fixed-bug-3.jpg)
 
 # **Deployment**
 
